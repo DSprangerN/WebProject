@@ -3,7 +3,7 @@ Create a web page to schedule medical appointments (School project)
 
 To clone a repository:
 ```
-git clone https://github.com/Spingamii/Isla.git
+git clone https://github.com/DSprangerN/Web-Project.git
 ```
 
 # Main Commands
