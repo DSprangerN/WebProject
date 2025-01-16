@@ -1,10 +1,15 @@
+<!--O objectivo desta página é apresentar ao utilizador uma lista dos médicos disponíveis bem como as suas especialidade
+    de forma a facilitar a escolha do médico na altura de marcar uma consulta-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipa Médica</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         .medico {
             border: 1px solid #ccc;
@@ -33,13 +38,13 @@
 
         @media (max-width: 800px) {
             .medico {
-                flex: 1 1 calc(50% - 20px); /* 2 colunas */
+                flex: 1 1 calc(50% - 20px);
             }
         }
 
         @media (max-width: 400px) {
             .medico {
-                flex: 1 1 100%; /* 1 coluna */
+                flex: 1 1 100%;
             }
         }
 
@@ -58,12 +63,27 @@
         .logout-button:hover {
             background-color: #c82333;
         }
+
+        .btn-contactos {
+            width: 10%;
+        }
     </style>
 </head>
+
+<header>
+    <h1>MediTech - Marcação e Gestão de Consultas Médicas Online</h1>
+    </div>
+    <br>
+    <h2>Equipa Médica</h2>
+    <button type="button" class="btn-contactos"
+        onclick="window.location.href='../HTML/contactos.html'">Contactos</button>
+    </div>
+    <br>
+</header>
+
 <body>
     <a href="../php/formulario.php" class="home-button">Home</a>
     <a href="../php/logout.php" class="logout-button">Log Out</a>
-    <h1>Equipa Médica</h1>
     <div class="container">
         <div class="medico">
             <h2>Jorge Mendes</h2>
@@ -116,4 +136,13 @@
         </div>
     </div>
 </body>
+
+<footer>
+    <h1>Projeto desenvolvido pelos alunos:<br>
+        David das Neves e Miguel Silva<br>
+        Professor Marco Tereso<br>
+        Tecnologias & Programação de Sistemas de Informação<br>
+        ISLA - Santarém - 2024/2025</h1>
+</footer>
+
 </html>

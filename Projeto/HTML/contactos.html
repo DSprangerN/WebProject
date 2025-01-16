@@ -1,10 +1,14 @@
+<!-- O objectivo desta página html é apresentar ao utilizador os contactos de quem desenvolveu o website-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         .contacto {
             border: 1px solid #ccc;
@@ -12,6 +16,7 @@
             padding: 20px;
             margin: 10px;
             background-color: #f8f9fa;
+            text-align: center;
         }
 
         .contacto h2 {
@@ -20,6 +25,12 @@
 
         .contacto p {
             margin: 5px 0;
+        }
+
+        .contacto ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
         }
 
         .container {
@@ -43,30 +54,56 @@
         .logout-button:hover {
             background-color: #c82333;
         }
+
+        .btn-equipa {
+            width: 10%;
+        }
     </style>
 </head>
+
+<header>
+    <h1>MediTech - Marcação e Gestão de Consultas Médicas Online</h1>
+    <br>
+    <button type="button" class="btn-equipa" onclick="window.location.href='../HTML/equipa.html'">Equipa Médica</button>
+    <br>
+</header>
+
 <body>
     <a href="../php/formulario.php" class="home-button">Home</a>
     <a href="../php/logout.php" class="logout-button">Log Out</a>
-    <h1>Contactos</h1>
     <div class="container">
         <div class="contacto">
-            <h2>David das Neves</h2>
-            <p>Email: <span>davidneves12@hotmail.com</span></p>
-        </div>
-        <div class="contacto">
-            <h2>Miguel Silva</h2>
-            <p>Email: <span>[Insira o email]</span></p>
-        </div>
-        <div class="contacto">
-            <h2>Professor Marco Tereso</h2>
-            <p>Supervisor Geral</p>
-        </div>
-        <div class="contacto">
-            <h2>ISLA Santarém</h2>
-            <p>Morada: <span>R. Dr. Teixeira Guedes 31, 2000-029 Santarém</span></p>
-            <p>Contacto: <span>+351 243 305 880</span></p>
+            <h2>Contactos</h2>
+            <p>
+            <h3>Desenvolvedores</h3>
+            </p>
+            <ul>
+                <li>David das Neves - davidneves@outlook..com</li>
+                <li>Miguel Silva - miguelfire31@gmail.com</li>
+            </ul>
+            <p>
+            <h3>Supervisor Geral</h3>
+            </p>
+            <ul>
+                <li>Marco Tereso</li>
+            </ul>
+            <p>
+            <h3>Morada</h3>
+            </p>
+            <ul>
+                <li>ISLA Santarém, R. Dr. Teixeira Guedes 31, 2000-029 Santarém</li>
+                <li>Contacto: +351 243 305 880</li>
+            </ul>
         </div>
     </div>
 </body>
+
+<footer>
+    <h1>Projeto desenvolvido pelos alunos:<br>
+        David das Neves e Miguel Silva<br>
+        Professor Marco Tereso<br>
+        Tecnologias & Programação de Sistemas de Informação<br>
+        ISLA - Santarém - 2024/2025</h1>
+</footer>
+
 </html>
