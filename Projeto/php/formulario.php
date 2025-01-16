@@ -100,8 +100,8 @@
 <header>
     <h1>MediTech - Marcação e Gestão de Consultas Médicas Online</h1>
     <div class="header-buttons">
-        <button type="button" class="btn-equipa">Equipa Médica</button>
-        <button type="button" class="btn-contactos">Contactos</button>
+    <button type="button" class="btn-equipa" onclick="window.location.href='../HTML/equipa.html'">Equipa Médica</button>
+    <button type="button" class="btn-contactos" onclick="window.location.href='../HTML/contactos.html'">Contactos</button>
     </div>
     <br>
 </header>

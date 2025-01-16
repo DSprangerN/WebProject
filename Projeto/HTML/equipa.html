@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Equipa Médica</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .medico {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .medico h2 {
+            margin: 10px 0;
+        }
+
+        .medico ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 800px) {
+            .medico {
+                flex: 1 1 calc(50% - 20px); /* 2 colunas */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .medico {
+                flex: 1 1 100%; /* 1 coluna */
+            }
+        }
+
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-button:hover {
+            background-color: #c82333;
+        }
+    </style>
 </head>
 <body>
-    
+    <a href="../php/formulario.php" class="home-button">Home</a>
+    <a href="../php/logout.php" class="logout-button">Log Out</a>
+    <h1>Equipa Médica</h1>
+    <div class="container">
+        <div class="medico">
+            <h2>Jorge Mendes</h2>
+            <ul>
+                <li>Geriatria</li>
+            </ul>
+        </div>
+        <div class="medico">
+            <h2>Ana Silva</h2>
+            <ul>
+                <li>Pediatria</li>
+                <li>Psicologia ou Psiquiatria</li>
+            </ul>
+        </div>
+        <div class="medico">
+            <h2>Ricardo Mendes</h2>
+            <ul>
+                <li>Psicologia ou Psiquiatria</li>
+                <li>Medicina Alternativa</li>
+                <li>Pediatria</li>
+            </ul>
+        </div>
+        <div class="medico">
+            <h2>Duarte Antunes</h2>
+            <ul>
+                <li>Geriatria</li>
+                <li>Odontologia de Urgência</li>
+            </ul>
+        </div>
+        <div class="medico">
+            <h2>Rita Ferreira</h2>
+            <ul>
+                <li>Odontologia de Urgência</li>
+                <li>Psicologia ou Psiquiatria</li>
+            </ul>
+        </div>
+        <div class="medico">
+            <h2>Carlos Silva</h2>
+            <ul>
+                <li>Medicina Alternativa</li>
+                <li>Geriatria</li>
+                <li>Odontologia de Urgência</li>
+            </ul>
+        </div>
+        <div class="medico">
+            <h2>Tiago Neves</h2>
+            <ul>
+                <li>Psicologia ou Psiquiatria</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

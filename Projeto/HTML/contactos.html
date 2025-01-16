@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .contacto {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f8f9fa;
+        }
+
+        .contacto h2 {
+            margin: 10px 0;
+        }
+
+        .contacto p {
+            margin: 5px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <a href="../php/formulario.php" class="home-button">Home</a>
+    <a href="../php/logout.php" class="logout-button">Log Out</a>
+    <h1>Contactos</h1>
+    <div class="container">
+        <div class="contacto">
+            <h2>David das Neves</h2>
+            <p>Email: <span>davidneves12@hotmail.com</span></p>
+        </div>
+        <div class="contacto">
+            <h2>Miguel Silva</h2>
+            <p>Email: <span>[Insira o email]</span></p>
+        </div>
+        <div class="contacto">
+            <h2>Professor Marco Tereso</h2>
+            <p>Supervisor Geral</p>
+        </div>
+        <div class="contacto">
+            <h2>ISLA Santarém</h2>
+            <p>Morada: <span>R. Dr. Teixeira Guedes 31, 2000-029 Santarém</span></p>
+            <p>Contacto: <span>+351 243 305 880</span></p>
+        </div>
+    </div>
+</body>
+</html>
