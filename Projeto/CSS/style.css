@@ -1,0 +1,142 @@
+header {
+    background-image: url('../img/banner.jpg');
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    padding: 120px;
+    text-align: center;
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #5a6268;
+}
+
+.logout-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #5a6268;
+}
+
+body {
+    background-image: url('../img/digitalizacao-da-saude.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+#formulario {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 300px);
+    text-align: center;
+}
+
+body h1 {
+    font-size: 24px;
+    padding: auto;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto 20px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #a04545;
+}
+
+footer {
+    background-image: url(../img/banner2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
