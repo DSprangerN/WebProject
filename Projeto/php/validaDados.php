@@ -1,7 +1,8 @@
-<?php
-session_start(); // Inicia a sessão
 
-// Conexão com a base de dados
+<!-- Scripte com o objetivo de validar os dados do utilizador de forma a poder enviar o email para a sua caixa de correio -->
+<?php
+session_start();
+
 include '../php/ligaBD.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -51,11 +52,11 @@ if (mysqli_stmt_execute($stmt)) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
-        $mail->Username = 'seu_email@gmail.com'; // Substitua pelo seu e-mail
-        $mail->Password = 'sua_senha'; // Substitua pela sua senha
+        $mail->Username = 'spranger10@gmail.com';
+        $mail->Password = 'ssguwmuntpfallfo';
         $mail->Port = 587;
 
-        $mail->setFrom('seu_email@gmail.com', 'MediTech'); // Substitua pelo seu e-mail e nome
+        $mail->setFrom('spranger10@gmail.com', 'MediTech');
         $mail->addAddress($user_email);
         $mail->isHTML(true);
         $mail->Subject = 'Confirmação de Marcação de Consulta';

@@ -1,7 +1,10 @@
-<?php
-session_start(); // Inicia a sessão
 
-// Conexão com a base de dados
+<!--  Script que verifica o registo de um novo user.
+  Confirma se o email não existe na base de dados, se não existir, insere os novos dados na base de dados -->
+
+<?php
+session_start();
+
 include 'ligaBD.php';
 
 // Obtém os dados do registo
@@ -43,6 +46,6 @@ if (mysqli_num_rows($check_result) > 0) {
     }
 }
 
-// Fechar a base de dados
+// Fecha a base de dados
 mysqli_close($liga);
 ?>

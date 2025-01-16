@@ -1,3 +1,5 @@
+<!-- Função que verifica a qualquer momento se o utilizador está logado -->
+
 <?php
 session_start(); // Inicia a sessão
 

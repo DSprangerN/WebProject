@@ -1,7 +1,9 @@
-<?php
-session_start(); // Inicia a sessão
 
-// Conexão com a base de dados
+<!-- Script com o intuito de criar uma página onde o utilizador logado pode consultar, alterar e cancelar as consultas futuras -->
+
+<?php
+session_start();
+
 include 'ligaBD.php';
 
 if (isset($_SESSION['user_id'])) {
@@ -59,7 +61,7 @@ if (isset($_SESSION['user_id'])) {
 
             // Verifica se há registos na tabela
             if ($result->num_rows > 0) {
-                // Se houver registros, cria uma tabela HTML para exibi-los
+                // Tabela HTML para exibir os registos
                 echo '<table class="table table-hover">';
                 echo '<thead class="table-dark">';
                 echo '<tr>';
@@ -76,13 +78,13 @@ if (isset($_SESSION['user_id'])) {
                 while ($row = $result->fetch_assoc()) {
                     echo '<tr>';
 
-                    // Exibe os dados de cada coluna para cada consulta
+                    // Mostra dados de cada coluna para cada consulta
                     echo '<td>' . htmlspecialchars($row['nome_profissional']) . '</td>';
                     echo '<td>' . htmlspecialchars($row['tipo_consulta']) . '</td>';
                     echo '<td>' . htmlspecialchars($row['data_consulta']) . '</td>';
                     echo '<td>' . htmlspecialchars($row['descricao']) . '</td>';
 
-                    // Adiciona os botões "Alterar" e "Cancelar"
+                    // Botões de "Alterar" e "Cancelar"
                     echo '<td>';
                     echo '<a href="editar_consulta.php?id=' . htmlspecialchars($row['id_consultas']) . '" class="btn btn-primary btn-sm">Alterar</a> ';
                     echo '<a href="cancelar_registo.php?id=' . htmlspecialchars($row['id_consultas']) . '" class="btn btn-danger btn-sm" onclick="return confirm(\'Tem certeza que deseja cancelar esta consulta?\')">Cancelar</a>';
@@ -94,11 +96,11 @@ if (isset($_SESSION['user_id'])) {
                 echo '</tbody>';
                 echo '</table>';
             } else {
-                // Se não houver registros, exibe uma mensagem de aviso
+                // Se não houver registos, exibe uma mensagem de aviso
                 echo '<p class="alert alert-warning">Nenhuma consulta futura encontrada.</p>';
             }
 
-            // Fecha a conexão com a base de dados
+            // Fecha a ligação com a base de dados
             $stmt->close();
             mysqli_close($liga);
             ?>

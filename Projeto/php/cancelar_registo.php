@@ -56,7 +56,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 $mail->SMTPAuth = true;
                 $mail->SMTPSecure = 'tls';
                 $mail->Username = 'spranger10@gmail.com';
-                $mail->Password = 'fyvhloqhpbycistb';
+                $mail->Password = 'ssguwmuntpfallfo';
                 $mail->Port = 587;
 
                 $mail->setFrom('spranger10@gmail.com', 'MediTech');
